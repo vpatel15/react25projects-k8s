@@ -8,6 +8,8 @@ In the project directory, you can run:
 
 Create a k8s cluster, deploy the app in a pod in that cluster, create ingress to connect to the cluster from outside and Runs the application with domain react25projects.com 
 
+image name: vpateldocker15/react25projects
+
 ### `npm start`
 
 Runs the app in the development mode.\
