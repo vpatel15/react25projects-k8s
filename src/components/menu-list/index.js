@@ -10,7 +10,7 @@ const MenuList = ({menus = []}) => {
     <Mycontext.Provider value={dataFromContext} >
       <ul className='menu-list-container'>
         {menus && menus.length > 0 && menus.map((menu) => (
-          <MenuItem menu={menu} />
+          <MenuItem menu={menu} key={menu.label} />
         ))}
       </ul>
     </Mycontext.Provider>

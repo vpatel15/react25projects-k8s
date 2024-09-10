@@ -48,7 +48,7 @@ const LazyGrid = () => {
       <div className="products-container">
         {products &&
           products.length > 0 &&
-          products.map((product) => <div className="product" key={'product-'+product.id}>
+          products.map((product) => <div data-testid='grid-list-item' className="product" key={'product-'+product.id}>
             <img src={product.thumbnail} alt={product.title} />
             <p>{product.title}</p>
           </div>
