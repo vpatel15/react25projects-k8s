@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-25-projects-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react-25-projects
+  template:
+    metadata:
+      labels:
+        app: react-25-projects
+    spec:
+      containers:
+        - name: react-25-projects
+          image: vpateldocker15/react-25-projects
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-25-projects-srv
+spec:
+  selector:
+    app: react-25-projects
+  ports:
+    - name: react-25-projects
+      protocol: TCP
+      port: 3000
+      targetPort: 3000

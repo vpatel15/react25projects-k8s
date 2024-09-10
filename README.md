@@ -1,10 +1,12 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## React project deployed and run in a k8s cluster pod
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `skaffold dev`
+
+Create a k8s cluster, deploy the app in a pod in that cluster, create ingress to connect to the cluster from outside and Runs the application with domain react25projects.com 
 
 ### `npm start`
 
